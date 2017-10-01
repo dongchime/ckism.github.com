@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>자기 소개 페이지</title>
+        
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     
@@ -11,42 +16,52 @@
             <h1>김채은의 자기소개 페이지 입니다.</h1>    
         </div>
         
-        <div class="section profile">
-            <div class="thumb">
-                <img src="img/profile.JPG">
-            </div>
-
-            <div class="intro">
-                <span class="my-name">김채은</span>
-                <ul>
-                    <li>나이: 22</li>
-                    <li>성별: 여자</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="section hobby">
-            <h2 class="section-name">내 활동내용</h2>
-            <ul>
-                <li>2016, robocup 대회</li>
-                <li>2017, acm-icpc 대회</li>
-            </ul>
-        </div>
-        
-        <div class="section gallary">
-            <h2 class="section-name">갤러리</h2>
-            <div class="image">
-                <img src="img/g1.JPG">
+        <div class="container"> <!-- bootstrap에서 제공하는 class 이름으로 (container) 작성 -->
+            
+            <div class="section profile">
+                <div class="row">
+                    <div class="thumb col-md-4 col-xs-6">
+                        <img src="img/profile.JPG">
+                    </div>
+    
+                    <div class="intro col-md-8 col-xs-6">
+                        <span class="my-name">김채은</span>
+                        <ul>
+                            <li>나이: 22</li>
+                            <li>성별: 여자</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
-            <div class="image">
-                <img src="img/g2.JPG">
+            <div class="section hobby">
+                <h2 class="section-name">내 활동내용</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li>2016, robocup 대회</li>
+                            <li>2017, acm-icpc 대회</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
-            <div class="image">
-                <img src="img/g3.JPG">
+            <div class="section gallary">
+                <h2 class="section-name">갤러리</h2>
+                <div class="row">
+                    <div class="image col-md-4 col-xs-12 col-sm-6">
+                        <img src="img/g1.JPG">
+                    </div>
+                    
+                    <div class="image col-md-4 col-xs-12 col-sm-6">
+                        <img src="img/g2.JPG">
+                    </div>
+                    
+                    <div class="image col-md-4 col-xs-12 col-sm-6">
+                        <img src="img/g3.JPG">
+                    </div>
+                </div>
             </div>
-            
         </div>
     </body>
 </html>
