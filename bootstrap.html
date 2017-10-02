@@ -3,18 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>부트스트랩 다뤄보기</title>
+        
         <!-- JQuery CDN -->
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         
         <!-- bootstrap CDN-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- font awesome -->
+        <script src="https://use.fontawesome.com/2987d75a3b.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">HOME</a>
+                    <a class="navbar-brand" href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>HOME
+                    </a>
                     
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu">
                         <span class="icon-bar"></span>
@@ -30,6 +36,11 @@
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <button type="button" class="btn btn-link navbar-btn"><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+                            </a>
+                        </li>
                         <li><button type="button" class="btn btn-default navbar-btn">SignUp</button></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
