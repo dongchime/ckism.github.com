@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>form tag 알아보기</title>
+        
+        <!-- bootstrap CDN-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <form action="https://www.google.com" method="post"> <!-- 하나의 입력받고 싶은 데이터가 있을때마다 form 태그 -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control"/>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control"/>
+                </div>
+                
+                <button type="submit" class="btn btn-default">LogIn</button>                </button>
+            </form>
+            
+            <form action="https://google.com">
+                <div class="form-group">
+                    <label for="query">검색어</label>
+                    <input type="text" name="query" class="form-control"/>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-success">검색</button>
+            </form>
+        </div>
+    </body>
+</html>
